@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+<body>
+<script>
+	var jsonData = [{
+		"students":{
+			"student1":{
+				"name":"Gurkirat Kaur",
+				"age" : 27,
+				"weight": 56,
+				"height" : "5feets",
+				"friends" :[{"id":1,"name":"Disha"},{"id":2, "name":"Ruchita"}],
+				"college" : {
+					"name":"Birla Institue Of Technology, Mesra",
+					"city":"Ranchi",
+					"pincode": 834005
+				}
+			},
+		"student2":{
+				"name":"Ping Ting",
+				"age" : 27,
+				"weight": 56,
+				"height" : "4feets",
+				"friends" :[{"id":1,"name":"Gurkirat"},{"id":2,"name":"Hiya"}],
+				"college" : {
+					"name":"Birla Institue Of Technology, Mesra",
+					"city":"Ranchi",
+					"pincode": 834005
+				}
+			}
+		}
+	}];
+	var student = JSON.stringify(jsonData);
+	console.log(student);
+</script>
+</body>
+</html>
